@@ -10,10 +10,12 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.bryanrr.laboratorio4.AdapterHolder;
 import com.bryanrr.laboratorio4.AdapterSimple;
 import com.bryanrr.laboratorio4.GridViewActivity;
+import com.bryanrr.laboratorio4.RecyclerActivity;
 
 import java.util.List;
 
@@ -70,7 +72,7 @@ public class StringAdapter extends ArrayAdapter<String> {
                 context.startActivity(intent);
                 break;
             case 3:
-                intent = new Intent(context, AdapterSimple.class);
+                intent = new Intent(context, RecyclerActivity.class);
                 context.startActivity(intent);
                 break;
         }
